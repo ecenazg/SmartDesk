@@ -1,0 +1,47 @@
+# SmartDesk — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core AI Framework ──────────────────────
+langchain==0.2.16
+langchain-openai==0.1.23
+langchain-community==0.2.16
+openai==1.40.0
+
+# ── RAG — Vector Store ─────────────────────
+faiss-cpu==1.8.0
+
+# ── RAG Evaluation ─────────────────────────
+ragas==0.1.21
+datasets==2.20.0           # Required by RAGAS
+
+# ── HTTP / API calls ───────────────────────
+requests==2.32.3
+httpx==0.27.0
+
+# ── Observability ──────────────────────────
+langfuse==2.36.2
+
+# ── Document loading ───────────────────────
+pypdf==4.3.1               # PDF ingestion
+unstructured==0.15.0       # Markdown + misc docs
+
+# ── Utilities ──────────────────────────────
+python-dotenv==1.0.1       # Load .env file
+pydantic==2.8.2            # Data validation
+tiktoken==0.7.0            # Token counting
+
+# ── Web Server (production API) ────────────────────────────
+fastapi==0.111.0
+uvicorn==0.30.1
+
+# ── Google Workspace ───────────────────────────────────────
+google-auth==2.30.0
+google-auth-httplib2==0.2.0
+google-api-python-client==2.131.0
+
+# ── Testing ────────────────────────────────────────────────
+pytest==8.2.2
+pytest-asyncio==0.23.7
+
+# ── Date parsing for ClickUp due dates ────────────────────
+dateparser==1.2.0
